@@ -66,6 +66,7 @@ public class Converter {
             result = result + symbols;
             if (i < sentence.length() - 1) {
                 result = result + " ";
+                //förhindrar mellanslag på slutet
             }
             if (symbols == null){
                 return "incorrect parameter: " + letter;
@@ -144,39 +145,3 @@ public class Converter {
         return result;
     }
 }
-
-   /* public String getMorse(String sentence) {
-        createMorseMap();
-
-        String symbols = "";
-        String result = "";
-
-        String[] symbolsArray = sentence.split(" ");
-
-        for (int i = 0; i < symbolsArray.length(); i++) {
-            //   String letter = String.valueOf(sentence.charAt(i));
-
-
-            fibonacci[i] = fibonacci[i-2] + fibonacci[i-1];
-
-
-            symbols = morseCodeMap.get(letter);
-
-            result = result + symbols;
-            if (i < sentence.length() - 1) {
-                result = result + " ";
-            }
-        }
-
-        return result;
-    }
-
-       /* if (text.equals("E")) {
-
-            return "*";
-        } else {
-            return "_";
-        }*/
-
-
-
